@@ -250,6 +250,9 @@ i {
 }
 
 @media only screen and (max-width: 576px) {
+    .container{
+        padding: 20px;
+    }
     .title {
         font-size: 1.5rem;
         margin-bottom: 16px;
@@ -294,6 +297,9 @@ i {
 }
 
 @media only screen and (max-width: 400px) {
+    .container{
+        padding: 15px;
+    }
     .title {
         font-size: 1.5rem;
         margin-bottom: 12px;
