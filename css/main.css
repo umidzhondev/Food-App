@@ -176,9 +176,10 @@ i {
 }
 
 .meal__card-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     font-weight: 500;
+    margin-inline: 10px;
 }
 
 .meal__card-button {
