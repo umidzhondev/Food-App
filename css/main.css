@@ -93,9 +93,9 @@ i {
     font-weight: 500;
 }
 .meal__input::placeholder{
-    color: var(--orange-color-dark);
+    color: var(--orange-color);
     font-family: "Poppins",sans-serif;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .search__button {
