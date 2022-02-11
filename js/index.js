@@ -34,3 +34,9 @@ btn.addEventListener('click', () => {
     cards.innerHTML = "";
     response(FILTER_API_KEY + input.value.trim().toLowerCase());
 });
+input.addEventListener('keypress', (e) => {
+    if (e.code == "Enter") {
+        cards.innerHTML = "";
+        response(FILTER_API_KEY + input.value.trim().toLowerCase());
+    }
+});
