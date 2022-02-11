@@ -9,9 +9,9 @@ function response(url) {
         .then(data => data.json())
         .then(response => {
             if (!response.meals) {
-                noResultBtn.classList.add("hidden")
+                noResultBtn.classList.replace("hidden","visible")
             } else {
-                noResultBtn.classList.remove("hidden")
+                noResultBtn.classList.replace("visible","hidden");
                 cards.innerHTML = "";
                 response.meals.forEach(item => {
                     cards.innerHTML += `

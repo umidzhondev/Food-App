@@ -147,16 +147,20 @@ i {
 }
 
 .no--results {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background-color: rgb(1, 136, 46);
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
+    margin: 20px auto;
 }
 .no-results.hidden{
     display: none;
+}
+.no--results.visible{
+    display: flex;
 }
 
 .meal__card-imgbox {
