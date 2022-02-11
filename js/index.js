@@ -2,16 +2,16 @@ const FILTER_API_KEY = "https://www.themealdb.com/api/json/v1/1/filter.php?i="
 const input = document.querySelector(".meal__input");
 const btn = document.querySelector(".search__button");
 const cards = document.querySelector(".meal__cards");
+const noResultBtn = document.querySelector(".no--results");
 
 function response(url) {
     fetch(url)
         .then(data => data.json())
         .then(response => {
             if (!response.meals) {
-                cards.innerHTML = `
-                    <h2 class="no--results">No Found Result :( </h2>
-                `
+                noResultBtn.classList.add("hidden")
             } else {
+                noResultBtn.classList.remove("hidden")
                 cards.innerHTML = "";
                 response.meals.forEach(item => {
                     cards.innerHTML += `
