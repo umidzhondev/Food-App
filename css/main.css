@@ -130,6 +130,7 @@ i {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem 2rem;
     width: 100%;
+    position: relative;
 }
 
 .meal__card {
