@@ -28,7 +28,10 @@ body {
     padding: 2rem;
     margin: 0 auto;
 }
-button,a,i{
+
+button,
+a,
+i {
     cursor: pointer;
 }
 
@@ -87,6 +90,12 @@ button,a,i{
     border-bottom-right-radius: 0;
     color: var(--orange-color);
     font-size: 1.2rem;
+    font-weight: 500;
+}
+.meal__input::placeholder{
+    color: var(--orange-color-dark);
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
 }
 
 .search__button {
@@ -135,7 +144,8 @@ button,a,i{
     overflow: hidden;
     padding-bottom: 20px;
 }
-.no-results{
+
+.no--results {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,6 +153,11 @@ button,a,i{
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
 }
 
 .meal__card-imgbox {
@@ -173,105 +188,132 @@ button,a,i{
     outline: 0;
     font-weight: 500;
 }
-@media only screen and (max-width: 992px){
-    .title{
+
+@media only screen and (max-width: 992px) {
+    .title {
         font-size: 2rem;
     }
-    .meal__body .title{
+
+    .meal__body .title {
         font-size: 1.9rem;
     }
-    .meal__content p{
+
+    .meal__content p {
         width: 75%;
         font-size: 17px;
     }
-    .meal__content h2{
+
+    .meal__content h2 {
         margin-top: 10px;
     }
-    .meal__cards{
-        grid-template-columns: repeat(2,1fr);
+
+    .meal__cards {
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem 1.5rem;
     }
-    .meal__card-title{
+
+    .meal__card-title {
         font-size: 1.2rem;
     }
-    .meal__card-button{
+
+    .meal__card-button {
         padding: .7rem 2.5rem;
     }
 }
-@media only screen and (max-width: 768px){
-    .title{
+
+@media only screen and (max-width: 768px) {
+    .title {
         font-size: 1.8rem;
         margin-bottom: 20px;
     }
-    .meal__body .title{
+
+    .meal__body .title {
         font-size: 1.7rem;
     }
-    .meal__header{
+
+    .meal__header {
         width: 100%;
     }
-    .meal__card-title{
+
+    .meal__card-title {
         font-size: 1.1rem;
         width: 90%;
     }
-    .meal__card-button{
+
+    .meal__card-button {
         padding: .6rem 2.2rem;
     }
-    .meal__card-imgbox{
+
+    .meal__card-imgbox {
         height: 240px;
     }
 }
-@media only screen and (max-width: 576px){
-    .title{
+
+@media only screen and (max-width: 576px) {
+    .title {
         font-size: 1.5rem;
         margin-bottom: 16px;
     }
-    .meal__body .title{
+
+    .meal__body .title {
         font-size: 1.5rem;
     }
-    .meal__content h2{
+
+    .meal__content h2 {
         margin-top: 0;
     }
-    .meal__card-title{
+
+    .meal__card-title {
         font-size: 1.1rem;
         width: 90%;
     }
-    .meal__card-button{
+
+    .meal__card-button {
         padding: .5rem 2.2rem;
     }
-    .search__button{
+
+    .search__button {
         padding: 12px;
     }
-    .meal__header p{
+
+    .meal__header p {
         width: 100%;
         font-size: 16px;
     }
-    .meal__input{
+
+    .meal__input {
         font-size: 1rem;
     }
-    .search__button i{
+    .search__button i {
         font-size: 1.1rem;
     }
-    .meal__cards{
-        grid-template-columns: repeat(1,1fr);
+
+    .meal__cards {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-@media only screen and (max-width: 400px){
-    .title{
+
+@media only screen and (max-width: 400px) {
+    .title {
         font-size: 1.5rem;
         margin-bottom: 12px;
         font-weight: 500;
     }
-    .meal__body .title{
+
+    .meal__body .title {
         font-size: 1.5rem;
         margin-bottom: 15px;
     }
-    .meal__card-button{
+
+    .meal__card-button {
         padding: .5rem 2.5rem;
     }
-    .meal__header p{
+
+    .meal__header p {
         font-size: 15px;
     }
-    .meal__card-imgbox{
+
+    .meal__card-imgbox {
         height: 240px;
     }
 }
